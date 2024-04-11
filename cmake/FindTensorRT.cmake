@@ -76,7 +76,7 @@ if(TensorRT_FOUND)
     set(TensorRT_INCLUDE_DIRS ${TensorRT_INCLUDE_DIR})
 
     if(NOT TensorRT_LIBRARIES)
-        set(TensorRT_LIBRARIES ${TensorRT_LIBRARY} ${TensorRT_NVONNXPARSER_LIBRARY} ${TensorRT_NVPARSERS_LIBRARY})
+        set(TensorRT_LIBRARIES ${TensorRT_LIBRARY} ${TensorRT_NVONNXPARSER_LIBRARY} ${TensorRT_PARSERS_LIBRARY})
     endif()
 
     if(NOT TARGET TensorRT::TensorRT)
